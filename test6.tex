@@ -1,0 +1,212 @@
+\documentclass[letterpaper,10.9pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Ayush Pandey} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 9079293042 ~ \href{mailto:ayush12122003@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ayush12122003@gmail.com}} ~ 
+    \href{https://linkedin.com/in/ayushpandey003}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ayushpandey003}}  ~
+    \href{https://github.com/ayushpandey003}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/ayushpandey003}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vit Bhopal University}{Sep. 2022 -- May 2026}
+      {Bachelor of Technology in Computer Science, GPA: 8.61/10.0}{Bhopal, MP}
+  \resumeSubHeadingListEnd
+
+
+%------RELEVANT COURSEWORK-------
+\vspace{-13pt}
+\section{Relevant Coursework}
+\begin{tabularx}{\textwidth}{X X X X}
+    Data Structures & Software Methodology & Algorithms Analysis & Database Management \\
+    Artificial Intelligence & OOPS & Systems Programming & Computer Architecture \\
+\end{tabularx}
+\vspace{-18pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C++ , C, JavaScript,Typescript , NextJs, React , Angular ,Java Spring Boot } \\
+     \textbf{Developer Tools}{: VS Code, GitHub} \\
+     \textbf{Database}{: PostgreSQL, MySQL, Sqlite,MongoDb} \\
+     \textbf{Cloud Services}{: Firebase, AWS, Google Cloud Platform (GCP)} \\
+    }}
+ \end{itemize}
+ \vspace{-18pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Multi Vendor Ecommerce Website} $|$ \emph{Next JS, MongoDB , Jod ,Zustand}}{October 2022}
+        \resumeItemListStart
+        \resumeItem{\raggedright Engineered the frontend using Next.js 13, optimizing page load speed through the implementation of server-side rendering (SSR) and static site generation (SSG).}
+        \resumeItem{\raggedright Incorporated Stripe for secure payment, reducing transaction failure rates, increasing user trust and satisfaction.}
+        \resumeItem{\raggedright Strategically planning the migration from MongoDB to PostgreSQL and transitioning from Prisma to Drizzle ORM to achieve faster execution and improved scalability.}
+        \resumeItem{\raggedright Integrated Zustand for state management, enhancing the performance and maintainability of the application by efficiently managing global state.}
+    \resumeItemListEnd
+    \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{ETCAM: Python-based Event Management Software} $|$ \emph{Python, Automation, Google Api}}{October 2023}
+          \resumeItemListStart
+          \resumeItem{\raggedright Developed ETCAM, a Python-based event management software, automating certificate generation and ticket verification to significantly enhance event management efficiency.}
+          \resumeItem{\raggedright Engineered an automated email notification system utilizing the Google API, streamlining participant communication and ensuring the timely delivery of personalized emails.}
+          \resumeItem{\raggedright Successfully tested the software during a live event, efficiently managing email communications for 150 participants, demonstrating its reliability and effectiveness.}
+      \resumeItemListEnd
+      \vspace{-14pt}
+      \resumeProjectHeading
+        {\textbf{Faculty Review Blog APP} $|$ \emph{Angular, JAVA Spring Boot ,PostgresSQL}}{Ongoing}
+        \resumeItemListStart
+        \resumeItem{\raggedright Developing a faculty review platform using Angular and Spring, enabling students to post and view reviews of faculty members based on different courses.}
+        \resumeItem{\raggedright Designing a user-friendly interface for students to easily navigate and access faculty reviews, improving transparency and feedback mechanisms.}
+        \resumeItem{\raggedright Implementing a robust backend to handle user authentication, data storage, and review management, ensuring a secure and efficient system.}
+        \resumeItem{\raggedright Optimizing database queries in PostgreSQL to enhance the performance of data retrieval and ensure quick access to faculty reviews.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-13pt}
+\section{Certifications}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Google IT Professional}{Coursera}{Specialization}{}
+            \resumeItemListStart
+                \resumeItem{Bits and Bytes of Computer Networking}
+                \resumeItem{Operating Systems and You: Becoming a Power User}
+                \resumeItem{Defence against digital arts}
+            \resumeItemListEnd
+            \resumeSubheading{Cloud Computing (NPTEL)}{}{Successfully Completed Cloud Computing course By NPTEL securing Silver certification with 75\% score.}{}
+    \resumeSubHeadingListEnd
+    \vspace{-11pt}
+\section{Profiles / Achievements}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Coding Profiles}{{\href{https://ayushpandey003.vercel.app}{Portfolio}}}{\href{https://leetcode.com/u/coder_ayush_leet/}{Leetcode coder\_ayush\_leet} — \href{https://www.geeksforgeeks.org/user/coder_ayush/}{GeeksForGeeks coder\_ayush} — \href{https://www.naukri.com/code360/profile/6acdb891-7900-4c53-bbb9-83c31775ff08}{CodeStudio} — \href{https://codeforces.com/profile/Coder_Ayush_}{Codeforces Coder\_Ayush\_}}{}
+            \resumeItemListStart
+                \resumeItem{Solved 250+ DSA problems from the Rapid Growth Problemset, building strong problem-solving skills.}
+                \resumeItem{Qualified for the second round in Asyncs Reimagine Hackathon by Sheriyans Coding School, ranking among the top 100 teams out of 750 teams.}
+                \resumeItem{Demonstrated a live working project on a personalized website for small vendors during Industry Conclave 2024, selected for the final round among the top 16 teams out of more than 100 teams.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Linpack(MATLAB and Latex) Club}{November 2023 -- Present}{President}{VIT Bhopal University}
+            \resumeItemListStart
+                \resumeItem{Led 30+ members to achieve goals in community service, academics, and unity.}
+                \resumeItem{Successfully conducted 2 workshops with more then 150 participations.}
+            \resumeItemListEnd
+             \resumeSubheading{Hobby}{Chess.com}{Chess}{ches\_Ayush\_003}
+            
+    \resumeSubHeadingListEnd
+   
+
+
+\end{document}
